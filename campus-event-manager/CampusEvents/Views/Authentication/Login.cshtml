@@ -1,0 +1,46 @@
+﻿@using Campus_Events.ViewModels
+@model LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+<div class="account-container">
+    <div class="account-box shadow-lg p-4 bg-white rounded">
+        <h2 class="text-center mb-4 text-dark">Login</h2>
+        <form asp-action="Authenticate" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <!-- Email Field -->
+            <div class="mb-3">
+                <label asp-for="EMail" class="form-label fw-bold">Email</label>
+                <input asp-for="EMail" class="form-control p-2" placeholder="Enter your email" />
+                <span asp-validation-for="EMail" class="text-danger"></span>
+            </div>
+
+            <!-- Password Field -->
+            <div class="mb-3">
+                <label asp-for="Password" class="form-label fw-bold">Password</label>
+                <input asp-for="Password" type="password" class="form-control p-2" placeholder="Enter your password" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <!-- Forgot Password Link -->
+            <div class="text-end mb-3">
+                <a asp-controller="Authentication" asp-action="PasswordForgotten" class="text-decoration-none text-muted">
+                    Forgot password?
+                </a>
+            </div>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Login" class="btn btn-success w-100 p-2" />
+
+            <!-- Register Link -->
+            <p class="text-center mt-3">
+                Don't have an account?
+                <a asp-controller="Authentication" asp-action="Register" class="text-decoration-none text-primary">
+                    Register
+                </a>
+            </p>
+
+        </form>
+    </div>
+</div>
