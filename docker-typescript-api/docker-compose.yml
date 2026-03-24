@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:   # Die zu startenden Container
+  api: # container 1 — Mein API
+    build: . # Aus dem lokalen Dockerfile bauen
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_URL=postgresql://user:password@db:5432/madb
+    depends_on: # Warten, bis die Datenbank bereit ist, bevor gestartet wird
+      - db
+
+  db: # container 2 — PostgreSQL
+    image: postgres:15-alpine # Image direkt aus Docker Hub
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=madb
+    ports:
+      - "5432:5432"

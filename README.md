@@ -1,1 +1,27 @@
-# devops-portfolio
+[![Docker](https://img.shields.io/badge/Docker-Containerization-blue)](https://www.docker.com/)
+[![Node.js](https://img.shields.io/badge/Node.js-Backend-green)](https://nodejs.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue)](https://www.postgresql.org/)
+[![Docker Compose](https://img.shields.io/badge/Docker--Compose-Orchestration-orange)](https://docs.docker.com/compose/)
+
+
+Welcome to my DevOps portfolio.  
+This repository showcases projects that demonstrate my skills in containerization and orchestration using Docker.
+
+---
+
+## 📦 Projects
+
+### 1. docker-typescript-api
+A REST API built with TypeScript, containerized with Docker and orchestrated using Docker Compose.
+
+**Stack:** TypeScript · Node.js · PostgreSQL · Docker · Docker Compose
+
+**Run the project:**
+```bash
+git clone https://github.com/lapepitedor/devops-portfolio
+cd devops-portfolio/docker-typescript-api
+docker compose up
+```
+➡️ API disponible sur http://localhost:3000
+
+---
