@@ -25,3 +25,14 @@ docker compose up
 ➡️ API disponible sur http://localhost:3000
 
 ---
+### 2. campus-event-manager
+A full-stack web application to manage university events.
+
+**Stack:** ASP.NET Core · Razor Pages · PostgreSQL · Docker Compose
+
+**Run the project:**
+```bash
+cd devops-portfolio/campus-event-manager
+docker compose up
+```
+➡️ App available at http://localhost:8080
