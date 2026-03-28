@@ -36,3 +36,19 @@ cd devops-portfolio/campus-event-manager
 docker compose up
 ```
 ➡️ App available at http://localhost:8080
+
+---
+### 3. react-nginx-docker
+
+A React application built with Vite, served by Nginx, and containerized using a Docker **Multistage Build** — reducing the final image size by ~96% (from ~180 MB down to ~42 MB).
+
+**Stack:** React · Vite · Nginx · Docker · Docker Compose
+
+**Run the project:**
+
+```bash
+cd devops-portfolio/react-nginx-docker
+docker compose up --build
+```
+
+➡️ App available at http://localhost:3000
