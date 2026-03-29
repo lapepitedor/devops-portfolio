@@ -24,6 +24,8 @@ docker compose up
 ```
 ➡️ API disponible sur http://localhost:3000
 
+➡️ **Live demo:** http://mon-api-brinda.westeurope.azurecontainer.io:3000
+
 ---
 ### 2. campus-event-manager
 A full-stack web application to manage university events.
